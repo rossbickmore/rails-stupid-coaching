@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6 justify-content-center">
+
+      <h1>Stupid coaching</h1>
+
+      <div class="card-you">
+        <%= @question %>
+        <p>- You</p>
+      </div>
+
+      <div class="card-coach">
+        <% if @question.include? "work" %>
+          <p>Great!</p>
+        <% elsif @question.include? "?" %>
+          <p>Silly question, get dressed and go to work!</p>
+        <% else %>
+          <p>I don't care, get dressed and go to work!</p>
+        <% end %>
+        <p>- Coach</p>
+      </div>
+      <%= link_to "ask another question", ask_path%>
+    </div>
+  </div>
+</div>

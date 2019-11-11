@@ -1,0 +1,27 @@
+// Place all the styles related to the questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$grey: #F1F1F1;
+$background: #fcf5e5;
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+}
+
+body, p {
+  font-family: 'Roboto', sans-serif;
+  padding: 5px;
+}
+
+
+.card-you {
+  border-left: 5px solid $grey;
+  padding-left: 20px;
+}
+
+.card-coach {
+  background-color: $background;
+  border-left: 5px solid $grey;
+  padding-left: 20px;
+}
